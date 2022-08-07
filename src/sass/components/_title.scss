@@ -3,10 +3,12 @@
   font-size: 34px;
   line-height: 39px / 34px;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: var(--accent-cl-txt);
+
+  @media screen and (min-width: 1200px) {
+    letter-spacing: 0.06em;
+  }
 }
 
 .upertitle {
