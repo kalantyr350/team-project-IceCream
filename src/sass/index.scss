@@ -1,12 +1,8 @@
-// base
-@import './base/normolize';
-@import './base/common';
 
 // utility
 @import './utility/reset';
 @import './utility/variables';
 @import './utility/mixins';
-@import './utility/visually-hidden';
 
 // components
 @import './components/title';
@@ -14,12 +10,4 @@
 @import './components/buttons';
 
 // layouts
-@import './layouts/header';
-@import './layouts/hero';
-// @import './layouts/products';
-// @import './layouts/about';
-@import './layouts/advantages';
-// @import './layouts/gallery';
-// @import './layouts/customer-reviews';
-@import './layouts/contacts';
-// @import './layouts/footer';
+@import './layouts/products';
