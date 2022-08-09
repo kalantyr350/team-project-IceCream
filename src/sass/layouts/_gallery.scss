@@ -1,0 +1,146 @@
+.visually-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  visibility: visible;
+  animation-name: bounceInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  padding-bottom: 60px;
+
+  background: linear-gradient(
+    to bottom,
+    #fff5f6 0%,
+    #fff5f6 16%,
+    #fff 16%,
+    #fff 100%
+  );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      #fff5f6 0%,
+      #fff5f6 36%,
+      #fff 36%,
+      #fff 100%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      to bottom,
+      #fff5f6 0%,
+      #fff5f6 16%,
+      #fff 16%,
+      #fff 100%
+    );
+
+    padding-left: 93px;
+    padding-right: 94px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-container {
+    visibility: visible;
+    animation-name: bounceInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    height: 136px;
+
+    @media screen and (min-width: 768px) {
+      height: 327px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 430px;
+    }
+  }
+
+  .gallery-list {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 2.5px;
+
+    @media screen and (min-width: 768px) {
+      gap: 6.07px;
+    }
+
+    @media screen and (min-width: 768px) {
+      gap: 8px;
+    }
+  }
+
+  .gallery-thumb,
+  img {
+    border-radius: 13%;
+  }
+
+  .gallery-thumb {
+    border-radius: 20px;
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    margin-bottom: 2.52px;
+
+    &:hover {
+      transform: scale(1.17);
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 6.05px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 7.98px;
+    }
+  }
+
+  // animation
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInRightBig {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fadeInRightBig {
+    animation-name: fadeInRightBig;
+  }
+}
