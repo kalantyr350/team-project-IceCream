@@ -2,14 +2,28 @@
     background-image: linear-gradient(
         to top
         #fff 15%,
+        #FFF5F6 15%,
         #FFF5F6 85%,
     );
+
+    @media screen and (min-width: 768px) {
+       padding-right: 20px;
+       padding-left: 20px;
+    }
+
 }
 
 .contact__set{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
+
 }
 
 .contacts__card{
@@ -19,6 +33,16 @@
     background-color: var(--white-txt);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+    
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+
+    }
 }
 
 .contact__branch{
@@ -36,17 +60,51 @@
     text-align: center;
 
     color: #ffffff;
-    background-color: #F0D1A5;;
+    background-color: #F0D1A5;
+
+    @media screen and (min-width: 768px) {
+        width: 73px;
+
+        font-size: 16px;
+        
+    }
+
+    &--green{
+        width: 130px;
+
+        background-color: #C2E297;
+
+        @media screen and (min-width: 768px) {
+            width: 138px;
+    
+        }
+
+    }
 }
 
 .branch__box{
+    padding-right: 32px;
     padding-bottom: 24px;
 
     border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+        padding-right: 0;
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-right: 38px;
+    }
+
 }
 
 .branch__place{
     padding-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+    }
 }
 
 .branch__scedule{
@@ -55,6 +113,103 @@
 
 .branch__contact{
     padding-top: 24px;
+    
+}
+
+.contact__item{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--grey-txt);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.83;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
+
+}
+
+.branch__city{
+    margin-bottom: 8px;
+    font-weight: 500;
+    line-height: 1.86;   
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 12px;
+    }
+}
+
+
+.branch__descr{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--grey-txt);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.66;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
+
+}
+
+
+.scedule__item:first-child{
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+    }
+}
+
+.branch__days{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.86;
+   
+    color: var(--black-txt);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+
+    }
+}
+
+.branch__time{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+
+    color: var(--uppertitle-cl);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+
+    }
 }
 
 .contact__btn{
@@ -68,3 +223,18 @@
     
 }
 
+.btn__with-icon{
+    position: relative;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+}
+
+.btn__icon{
+    position: absolute;
+        top: 19px;
+        right: 19px;
+    
+        fill: var(--white-txt);
+}
