@@ -6,6 +6,7 @@
 @import './utility/reset';
 @import './utility/variables';
 @import './utility/mixins';
+@import './utility/visually-hidden';
 
 // components
 @import './components/title';
@@ -15,3 +16,4 @@
 // layouts
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/contacts';
