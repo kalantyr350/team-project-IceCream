@@ -1,1 +1,63 @@
-<section>About</section>
+<section class="about">
+  <div class="container">
+    <p class="about__upertitle upertitle">Tradition and love</p>
+    <h2 class="title">How it’s made?</h2>
+    <div class="about__wraper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /src/images/3-about/cow_&_milk-L.png    1x,
+            /src/images/3-about/cow_&_milk-L@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /src/images/3-about/cow_&_milk-M.png    1x,
+            /src/images/3-about/cow_&_milk-M@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 320x)"
+          srcset="
+            /src/images/3-about/cow_&_milk-S.png    1x,
+            /src/images/3-about/cow_&_milk-S@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="about__pic"
+          src="/src/images/3-about/cow_&_milk-S.png "
+          alt="black and white cow, jar with milk"
+        />
+      </picture>
+
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          srcset="/src/images/3-about/cow_&_milk-L.png    1xs"
+        />
+      </picture>
+      <div>
+        <p class="about__txt">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__txt about__txt--light">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          <span class="about__txt-span"
+            >Aliquam erat volutpat. Aenean accumsan.</span
+          >
+        </p>
+        <button class="btn--white btn" type="button">Read more</button>
+      </div>
+    </div>
+  </div>
+</section>

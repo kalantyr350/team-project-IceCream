@@ -1,10 +1,7 @@
-.svg-header {
-  fill: currentColor;
-}
-
 .footer {
-  height: 877px;
-  background-color: #fff5f6;
+  padding: 80px 20px;
+  background-color: var(--light-pink-red);
+  align-items: center;
 }
 .footer__group {
   display: flex;
@@ -21,10 +18,18 @@
 
 .footer__social-list {
   display: flex;
+  justify-content: flex-end;
 }
 
 .footer__social-list :not(:last-child) {
   margin-right: 30px;
+}
+.icon {
+  fill: var(--line-cl);
+}
+.icon:focus,
+.icon:hover {
+  fill: var(--accent-cl-txt);
 }
 
 .footer__tell-group {
@@ -34,7 +39,6 @@
 .footer__copyright {
   justify-content: center;
 }
-
 /* @media screen and (min-width: 768px) {
   .footer-items {
     display: flex;
@@ -57,7 +61,7 @@
 }
 
 .footer__title {
-  font-family: 'Titan One';
+  font-family: var(--secondori-txt);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -65,10 +69,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: var(--uppertitle-cl);
 }
 .footer__title_texst {
-  font-family: 'Titan One';
+  padding-top: 16px;
+  font-family: var(--secondori-txt);
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -76,10 +81,21 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--accent-cl-txt);
 }
 .footer__tell-text {
-  font-family: 'DM Sans';
+  font-family: var(--main-txt);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 186%;
+
+  letter-spacing: 0.02em;
+
+  color: var(--black-txt);
+}
+.footer__tell {
+  font-family: var(--main-txt);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -88,9 +104,25 @@
 
   letter-spacing: 0.02em;
 
-  color: #000000;
+  text-align: right;
+
+  color: var(--accent-cl-txt);
 }
 .footer__copyright {
+  padding-top: 60px;
   text-align: center;
-  border-top: 1px solid #e1e1e1;
+}
+
+.copyright {
+  font-family: var(--main-txt);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+
+  text-align: center;
+  border-top: 1px solid var(--line-cl);
+
+  color: var(--grey-txt);
 }

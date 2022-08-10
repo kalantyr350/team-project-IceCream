@@ -1,23 +1,85 @@
-.header__box{
+.header__box {
+    position: absolute;
+    z-index: 10;
+
+
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 20px;
+
     background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 35px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 37px;
+        padding-bottom: 20px;
+    }
+
+}
+
+.header {
+    display: flex;
 }
 
 
-.header__menu{
+.logo {
+    display: block;
+    width: 199px;
+    height: 50px;
+}
+
+
+.nav-desktop{
+    display: none;
+
+    @media screen and (min-width:1200px) {
+        display: block;
+        padding-top: 20px;
+
+        margin-left: 128px;
+
+    }
+
+}
+
+
+.nav-desktop__list{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.nav-desktop__item{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: var(--white-txt);
+}
+
+.header__menu {
+    display: none;
     width: 250px;
     height: 502px;
 
     padding-top: 60px;
-    padding-left: 20px;
+    
 
     background-color: #E17992
-
 }
 
-.nav__item{
-    border: 1px solid #E18298;
+
+.nav__item {
+    border-top: 1px solid #E18298;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 20px;
+
 
     font-family: var(--main-txt);
 
@@ -26,4 +88,76 @@
     line-height: 1.19;
 
     color: var(--white-txt);
+}
+
+.nav__item:last-child{
+    border-bottom: 1px solid #E18298;
+}
+
+// мобільне меню
+
+.mobile-menu__btn {
+    margin-left: auto;
+    z-index: 100;
+
+    background-color: transparent;
+
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    @media screen and (min-width:1200px) {
+        display: none;
+
+    }
+}
+
+.mobile-menu__burger {
+    opacity: 1;
+
+    transition: 500ms;
+
+    .mobile-menu__btn.is-open & {
+        opacity: 0;
+    }
+}
+
+.mobile-menu__close {
+    opacity: 0;
+    transition: 500ms;
+
+    .mobile-menu__btn.is-open & {
+        opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-text-color);
+        transition: 500ms;
+    }
+}
+
+
+
+
+.btn--tablet {
+    display: none;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-left: auto;
+
+
+    }
+}
+
+.btn--mobile{
+    margin-left: 20px;
 }

@@ -1,0 +1,105 @@
+.about {
+  background-color: var(--light-pink-red);
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/3-about/section_bg_img-S.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 594px;
+    background-size: 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/3-about/section_bg_img-S@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/3-about/section_bg_img-L.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/3-about/section_bg_img-L@2x.png);
+    }
+  }
+}
+
+.about__upertitle {
+  color: var(--uppertitle-cl);
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+
+.about__wraper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    gap: 99px;
+    margin-top: 60px;
+  }
+}
+
+.about__pic {
+  margin-top: 32px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.about__txt {
+  width: 220px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    line-height: 1.8;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+}
+
+.about__txt--light {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: var(--grey-txt);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
+}
+
+.about__txt-span {
+  display: block;
+  margin-top: 19px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 28px;
+  }
+}
