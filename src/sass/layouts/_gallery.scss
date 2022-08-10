@@ -1,33 +1,12 @@
-.visually-hidden {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  margin: 0;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.gallery {
+.gallery__section {
   visibility: visible;
-  animation-name: bounceInUp;
+  animation-name: fadeInRightBig;
+
   animation-duration: 1s;
   animation-fill-mode: both;
 
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   background: linear-gradient(
     to bottom,
@@ -37,12 +16,13 @@ img {
     #fff 100%
   );
 
-  @media screen and (min-width: 768px) {
-    background: linear-gradient(
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    background-image: linear-gradient(
       to bottom,
       #fff5f6 0%,
-      #fff5f6 36%,
-      #fff 36%,
+      #fff5f6 55%,
+      #fff 55%,
       #fff 100%
     );
   }
@@ -51,75 +31,155 @@ img {
     background: linear-gradient(
       to bottom,
       #fff5f6 0%,
-      #fff5f6 16%,
-      #fff 16%,
+      #fff5f6 28%,
+      #fff 28%,
       #fff 100%
     );
 
-    padding-left: 93px;
-    padding-right: 94px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .gallery-container {
+  .gallery__container {
     visibility: visible;
-    animation-name: bounceInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-name: fadeInRightBig;
 
-    height: 136px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    @media screen and (min-width: 768px) {
-      height: 327px;
+    @media screen and (min-width: 320px) {
+      width: 320px;
+      margin: 0 auto;
     }
 
     @media screen and (min-width: 768px) {
-      height: 430px;
-    }
-  }
-
-  .gallery-list {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    gap: 2.5px;
-
-    @media screen and (min-width: 768px) {
-      gap: 6.07px;
-    }
-
-    @media screen and (min-width: 768px) {
-      gap: 8px;
-    }
-  }
-
-  .gallery-thumb,
-  img {
-    border-radius: 13%;
-  }
-
-  .gallery-thumb {
-    border-radius: 20px;
-    animation-name: scale;
-    animation-duration: 5s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    margin-bottom: 2.52px;
-
-    &:hover {
-      transform: scale(1.17);
-      cursor: pointer;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 6.05px;
+      width: 740px;
     }
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 7.98px;
+      width: 1013px;
     }
+  }
+
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+
+    @media screen and (min-width: 768px) {
+      gap: 5px;
+    }
+  }
+
+  .gallery__thumb {
+    border-radius: 20px;
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+      transform: scale(1.07);
+      cursor: pointer;
+    }
+  }
+
+  .gallery__thumb,
+  img {
+    border-radius: 10%;
+    vertical-align: top;
+  }
+
+  .gallery__item-1 {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .gallery__item-2 {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .gallery__item-3 {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .gallery__item-4 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .gallery__item-5 {
+    grid-row-start: 7;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .gallery__item-6 {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+
+  .gallery__item-7 {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+
+  .gallery__item-8 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+
+  .gallery__item-9 {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+
+  .gallery__item-10 {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 8;
   }
 
   // animation
