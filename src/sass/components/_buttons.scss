@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  min-width: 161px;
+  min-width: 160px;
   min-height: 44px;
 
   padding: 11.5px 0;
@@ -19,14 +19,6 @@
 .btn--red {
   color: var(--white-txt);
   background: var(--accent-cl-txt);
-
-  @media screen and (min-width: 768px) {
-    min-width: 191px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    min-width: 198px;
-  }
 }
 
 .btn--white {
@@ -36,14 +28,6 @@
   &:hover,
   &:focus {
     background-color: var(--accent-cl-btn);
-  }
-
-  @media screen and (min-width: 768px) {
-    min-width: 174px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    min-width: 168px;
   }
 }
 
