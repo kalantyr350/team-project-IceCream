@@ -22,6 +22,8 @@
 
 .header {
     display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -103,15 +105,14 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 20px;
+    
+    // font-family: var(--main-txt);
 
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.19;
 
-    font-family: var(--main-txt);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.19;
-
-    color: var(--white-txt);
+    // color: var(--white-txt);
 
     &--red {
         color: var(--accent-cl-txt)
@@ -121,6 +122,28 @@
 .nav__item:last-child{
     border-bottom: 1px solid #E18298;
 }
+
+.nav__link{
+    display: block;
+    font-family: var(--main-txt);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.19;
+   
+    color: var(--white-txt);
+
+    &:hover,
+    &:focus{
+        cursor: pointer;
+    }
+
+
+    &--red {
+        color: var(--accent-cl-txt)
+    }
+}
+
 
 // мобільне меню
 
