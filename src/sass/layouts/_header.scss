@@ -160,11 +160,13 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    color: var(--accent-cl-txt);
   }
 
   &--red {
     color: var(--accent-cl-txt);
   }
+  
 }
 
 // мобільне меню
