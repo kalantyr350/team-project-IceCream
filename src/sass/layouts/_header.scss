@@ -130,9 +130,11 @@
 
   color: var(--white-txt);
 
+  transition: color 250ms var(--timing-variable);
   &:hover,
   &:focus {
     cursor: pointer;
+    color: var(--accent-cl-txt);
   }
 
   &--red {
