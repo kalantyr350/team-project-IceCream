@@ -20,14 +20,15 @@
       </ul>
     </nav>
 
-    <button class="mobile-menu__btn" type="button" data-menu-button>
-      <svg class="mobile-menu__icon" width="20" height="12">
+    <button class="mobile-menu__btn" type="button" aria-expanded="false" aria-controls="menu-container"
+      data-menu-button>
+      <svg class="mobile-menu__icon" width="20" height="12" aria-label="mobile menu switcher">
         <use class="mobile-menu__burger" href="./images/symbol-defs.svg#icon-Burger"></use>
         <use class="mobile-menu__close" href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
 
-    <button class="btn btn--white btn--tablet" type="button">
+    <button class="btn btn--white btn--tablet" type="button" aria-label="Buy now">
       Buy now
       <svg class="btn__icon--tablet btn__icon--red" width="5" height="8">
         <use href="./images/symbol-defs.svg#icon-arrow"></use>
@@ -36,8 +37,8 @@
 
   </div>
 
-  <div class="header__menu" data-menu>
-    <button class="btn btn--white btn__modal btn--mobile" type="button">
+  <div class="header__menu" id="menu-container" data-menu>
+    <button class="btn btn--white btn__modal btn--mobile" type="button" aria-label="Buy now">
       Buy now
       <svg class="btn__icon--modal btn__icon--red" width="4" height="8">
         <use href="./images/symbol-defs.svg#icon-arrow"></use>
