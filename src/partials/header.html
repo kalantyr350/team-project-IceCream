@@ -26,35 +26,13 @@
       </ul>
     </nav>
 
-    <button
-      class="mobile-menu__btn"
-      type="button"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button
-    >
-      <svg
-        class="mobile-menu__icon"
-        width="20"
-        height="12"
-        aria-label="mobile menu switcher"
-      >
-        <use
-          class="mobile-menu__burger"
-          href="./images/symbol-defs.svg#icon-Burger"
-        ></use>
-        <use
-          class="mobile-menu__close"
-          href="./images/symbol-defs.svg#icon-close"
-        ></use>
+    <button class="mobile-menu__btn" type="button" aria-expanded="false" aria-controls="menu-container" data-modal-open>
+      <svg class="mobile-menu__icon" width="20" height="12" aria-label="mobile menu open">
+        <use class="mobile-menu__burger" href="./images/symbol-defs.svg#icon-Burger"></use>
       </svg>
     </button>
 
-    <button
-      class="btn btn--white btn--tablet"
-      type="button"
-      aria-label="Buy now"
-    >
+    <button class="btn btn--white btn--tablet" type="button" aria-label="Buy now">
       Buy now
       <svg class="btn__icon--tablet btn__icon--red" width="5" height="8">
         <use href="./images/symbol-defs.svg#icon-arrow"></use>
@@ -62,36 +40,42 @@
     </button>
   </div>
 
-  <div class="header__menu" id="menu-container" data-menu>
-    <button
-      class="btn btn--white btn__modal btn--mobile"
-      type="button"
-      aria-label="Buy now"
-    >
-      Buy now
-      <svg class="btn__icon--modal btn__icon--red" width="4" height="8">
-        <use href="./images/symbol-defs.svg#icon-arrow"></use>
-      </svg>
-    </button>
+  <div class="backdrop is-hidden" data-modal>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav__link--red" href="#">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#hero">About us</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#about">How it’s made?</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#products">Our products</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#contacts">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__menu" id="menu-container" data-modal>
+
+      <button class="mobile-menu__close" type="button" aria-expanded="false" aria-controls="menu-container"
+        data-modal-close>
+        <svg class="mobile-menu__icon" width="14" height="14" aria-label="mobile menu close">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="btn btn--white btn__modal btn--mobile" type="button" aria-label="Buy now">
+        Buy now
+        <svg class="btn__icon--modal btn__icon--red" width="4" height="8">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--red" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#hero">About us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">How it’s made?</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#products">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
