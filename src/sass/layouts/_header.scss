@@ -151,11 +151,14 @@
 
   color: var(--white-txt);
 
+
   @media screen and (min-width: 1200px) {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
   }
+
+  transition: color 250ms var(--timing-variable);
 
   &:hover,
   &:focus {
