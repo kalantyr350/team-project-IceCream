@@ -1,7 +1,7 @@
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="icon-header-logo" viewBox="0 0 127 32">
-      <path fill="#fff" style="fill:var(--color1, #fff)"
+      <<<<<<< HEAD <path fill="#fff" style="fill:var(--color1, #fff)"
         d="M31.36 16.32C31.36 24.98 24.483 32 16 32S.64 24.98.64 16.32 7.517.64 16 .64s15.36 7.02 15.36 15.68z" />
       <path fill="#d41443" style="fill:var(--color2, #d41443)"
         d="M11.849.562C4.443 2.805 0 8.635 0 16.004c0 6.023 3.091 11.277 8.179 13.904 2.64 1.346 3.027.384.58-1.474-1.739-1.41-2.061-2.05-2.061-4.421 0-1.666-.386-3.011-.966-3.524-1.159-.961-1.288-3.46-.129-4.357.451-.384.902-1.666.966-2.819.322-4.229 4.894-8.201 9.467-8.201s9.145 3.973 9.466 8.201c.064 1.153.515 2.435.966 2.819 1.159.897 1.03 3.396-.129 4.357-.58.513-.966 1.858-.966 3.524 0 2.371-.322 3.011-2.061 4.421-2.705 2.114-1.932 2.883 1.095 1.025 4.25-2.627 7.406-8.33 7.406-13.391C31.813 5.944 21.252-2.257 11.85.562z" />
@@ -18,7 +18,8 @@
     </symbol>
     <symbol id="icon-arrow" viewBox="0 0 22 32">
       <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round"
-        stroke-miterlimit="4" stroke-width="6.4" d="M4.488 3.2l13.7 12.8-13.7 12.8"></path>
+        stroke-miterlimit="4" stroke-width="6.4" d="M4.488 3.2l13.7 12.8-13.7 12.8">
+      </path>
     </symbol>
     <symbol id="icon-frame-1" viewBox="0 0 21 32">
       <path
