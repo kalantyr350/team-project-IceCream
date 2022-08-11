@@ -104,6 +104,14 @@
   }
 }
 
+.about__flex {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-btn__icon {
   fill: var(--accent-cl-txt);
+  stroke: var(--accent-cl-txt);
 }
