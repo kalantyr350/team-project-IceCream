@@ -127,21 +127,22 @@
 .hero__ice-img {
   position: absolute;
 
-  top: 0;
-  left: 0;
-  transform: translate(117px, 92px);
+  top: 92px;
+  left: 117px;
 
   width: 171px;
   height: 410px;
 
   @media screen and (min-width: 768px) {
-    transform: translate(322px, 80px);
+    top: 80px;
+    left: 322px;
     width: 143px;
     height: 336px;
   }
 
   @media screen and (min-width: 1200px) {
-    transform: translate(636px, 108px);
+    top: 108px;
+    left: 636px;
     width: 236px;
     height: 557px;
   }
