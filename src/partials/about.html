@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
   <div class="container">
     <p class="about__upertitle upertitle">Tradition and love</p>
     <h2 class="title">How it’s made?</h2>
@@ -6,6 +6,8 @@
       <picture>
         <source
           media="(min-width: 1200px)"
+          width="501"
+          height="501"
           srcset="
             /src/images/3-about/cow_&_milk-L.png    1x,
             /src/images/3-about/cow_&_milk-L@2x.png 2x
@@ -14,6 +16,8 @@
         />
         <source
           media="(min-width: 768px)"
+          width="336"
+          height="335"
           srcset="
             /src/images/3-about/cow_&_milk-M.png    1x,
             /src/images/3-about/cow_&_milk-M@2x.png 2x
@@ -21,7 +25,9 @@
           type="image/png"
         />
         <source
-          media="(min-width: 320x)"
+          media="(min-width: 320px)"
+          width="280"
+          height="279"
           srcset="
             /src/images/3-about/cow_&_milk-S.png    1x,
             /src/images/3-about/cow_&_milk-S@2x.png 2x
@@ -30,17 +36,13 @@
         />
         <img
           class="about__pic"
+          width="280"
+          height="279"
           src="/src/images/3-about/cow_&_milk-S.png "
           alt="black and white cow, jar with milk"
         />
       </picture>
 
-      <picture>
-        <source
-          media="(min-width:1200px)"
-          srcset="/src/images/3-about/cow_&_milk-L.png    1xs"
-        />
-      </picture>
       <div>
         <p class="about__txt">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -56,7 +58,12 @@
             >Aliquam erat volutpat. Aenean accumsan.</span
           >
         </p>
-        <button class="btn--white btn" type="button">Read more</button>
+        <button class="btn--white btn about__flex" type="button">
+          Read more
+          <svg class="about-btn__icon" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>

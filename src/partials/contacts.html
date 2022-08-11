@@ -1,5 +1,5 @@
 <section class="contacts">
-    <h2 class="visually-hidden">Contacts</h2>
+    <h2 id="contacts" class="visually-hidden">Contacts</h2>
     <div class="contacts__container container">
         <ul class="contact__set">
             <li class="contacts__card">
@@ -10,15 +10,15 @@
                 </div>
 
                 <div class="branch__box">
-                    <ul class="branch__scedule">
-                        <li class="scedule__item">
+                    <ul class="branch__schedule">
+                        <li class="schedule__item">
                             <p class="branch__days">Monday - Friday</p>
                             <span class='branch__time'>
                                 <time>06:00</time> AM -
                                 <time>10:00</time> PM
                             </span>
                         </li>
-                        <li class="scedule__item">
+                        <li class="schedule__item">
                             <p class="branch__days">Saturday - Sunday</p>
                             <span class='branch__time'>
                                 <time>08:00</time> AM -
@@ -43,15 +43,15 @@
                 </div>
 
                 <div class="branch__box">
-                    <ul class="branch__scedule">
-                        <li class="scedule__item">
+                    <ul class="branch__schedule">
+                        <li class="schedule__item">
                             <p class="branch__days">Monday - Friday</p>
                             <span class='branch__time'>
                                 <time>06:00</time> AM -
                                 <time>10:00</time> PM
                             </span>
                         </li>
-                        <li class="scedule__item">
+                        <li class="schedule__item">
                             <p class="branch__days">Saturday - Sunday</p>
                             <span class='branch__time'>
                                 <time>08:00</time> AM -
@@ -75,15 +75,15 @@
                 </div>
 
                 <div class="branch__box">
-                    <ul class="branch__scedule">
-                        <li class="scedule__item">
+                    <ul class="branch__schedule">
+                        <li class="schedule__item">
                             <p class="branch__days">Monday - Friday</p>
                             <span class='branch__time'>
                                 <time>06:00</time> AM -
                                 <time>10:00</time> PM
                             </span>
                         </li>
-                        <li class="scedule__item">
+                        <li class="schedule__item">
                             <p class="branch__days">Saturday - Sunday</p>
                             <span class='branch__time'>
                                 <time>08:00</time> AM -
@@ -101,12 +101,16 @@
         </ul>
 
         <div class="contact__btn">
-            <button class="btn btn--red btn__with-icon" type="button">Our Locations
-                <svg class="btn__icon" width="4" height="8">
-                    <use href="./images/icons.svg#icon-arrow-right"></use>
+            <button class="btn btn--red btn__with-icon" type="button" aria-label="Our Locations">Our Locations
+                <svg class="btn__icon btn__icon--mobile" width="5" height="8">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </button>
-            <button class="btn btn--white" type="button">Franchise</button>
+            <button class="btn btn--white btn__with-icon" type="button" aria-label="Franchise">Franchise
+                <svg class="btn__icon btn__icon--red" width="5" height="8">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+            </button>
         </div>
     </div>
 
