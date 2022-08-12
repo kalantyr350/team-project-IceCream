@@ -149,7 +149,11 @@
         font-size: 16px;
         line-height: 1.83;
     }
+}
 
+.contact__item:hover,
+.contact__item:focus{
+    color: var(--accent-cl-txt);
 }
 
 .branch__city{
